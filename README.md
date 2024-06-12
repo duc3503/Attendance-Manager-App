@@ -10,7 +10,7 @@ This app could be used with the Firebase cloud service, a microcontroller and a 
 
 * View attendance statistics of a class on selected date.
 * Select class for a room (each room should be linked with a fingerprint sensor).
-* Add/modidy/delete classes (including teacher and student list of specific class).
+* Add/modify/delete classes (including teacher and student list of specific class).
 * Add/modify/delete students/teachers.
 * View current user info.
 
