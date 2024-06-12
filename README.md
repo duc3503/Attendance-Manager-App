@@ -94,7 +94,7 @@ This app could be used with the Firebase cloud service, a microcontroller and a 
   <img src="https://drive.google.com/uc?export=view&id=1eIWgzT6zpwGGApIHWvmIGb2SKhUb4Hj-" width="160" /> 
 </p>
 
-## About Me
+### About Me
 
 <p float="left">
   <img src="https://drive.google.com/uc?export=view&id=1dJVqZguUzdsEURe33UAaNngaCVLPm2gL" width="160" />
