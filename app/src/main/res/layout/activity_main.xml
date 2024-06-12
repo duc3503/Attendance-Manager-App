@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp" >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:gravity="center_vertical"
+            android:text="Attendance"
+            android:drawableLeft="@drawable/ic_uit"
+            android:layout_weight="1"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            tools:ignore="RtlCompat" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_button"
+            android:text="Add"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/primary"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/monday"
+                android:text="Monday"
+                android:layout_margin="5dp"
+                app:backgroundTint="#808482"
+                android:background="@drawable/retangle_btn"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tuesday"
+                android:text="Tuesday"
+                android:layout_margin="5dp"
+                app:backgroundTint="#808482"
+                android:background="@drawable/retangle_btn" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/wednesday"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/retangle_btn"
+                android:text="Wednesday"
+                app:backgroundTint="#808482" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/thursday"
+                android:text="Thursday"
+                android:layout_margin="5dp"
+                app:backgroundTint="#808482"
+                android:background="@drawable/retangle_btn" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/friday"
+                android:text="Friday"
+                android:layout_margin="5dp"
+                app:backgroundTint="#808482"
+                android:background="@drawable/retangle_btn" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/saturday"
+                android:text="Saturday"
+                android:layout_margin="5dp"
+                app:backgroundTint="#808482"
+                android:background="@drawable/retangle_btn" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sunday"
+                android:text="Sunday"
+                android:layout_margin="5dp"
+                app:backgroundTint="#808482"
+                android:background="@drawable/retangle_btn" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userHorizontalScrollView"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/student"
+                android:text="Student"
+                android:layout_margin="5dp"
+                app:backgroundTint="#808482"
+                android:background="@drawable/retangle_btn"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacher"
+                android:text="Teacher"
+                android:layout_margin="5dp"
+                app:backgroundTint="#808482"
+                android:background="@drawable/retangle_btn" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/admin"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/retangle_btn"
+                android:text="Admin"
+                app:backgroundTint="#808482" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/log_out_button"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF0000"
+        android:text="Log out"
+        android:textColor="@color/white"
+        android:textSize="10pt" />
+
+    <include layout="@layout/navigation_bar"
+        />
+
+
+</LinearLayout>

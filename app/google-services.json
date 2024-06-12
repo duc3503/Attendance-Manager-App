@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "121349648905",
+    "firebase_url": "https://fir-20ad9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-20ad9",
+    "storage_bucket": "fir-20ad9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121349648905:android:4b3b1a51d5ec9b6015fed8",
+        "android_client_info": {
+          "package_name": "com.example.attendancemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121349648905-7qmt67rm6vekc6i5j8d37rkbb0l2g0dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYTvC0Ou1rMI51UHIuuRn0PIiidz8DvyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121349648905-7qmt67rm6vekc6i5j8d37rkbb0l2g0dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

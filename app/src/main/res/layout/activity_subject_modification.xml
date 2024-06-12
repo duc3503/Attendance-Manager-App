@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modify_subject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/titleBar"
+        android:background="@color/primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_button"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/title"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:text="Edit"
+            android:background="@drawable/retangle_btn"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/secondary0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/deletebtn"
+            android:text="Delete"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/retangle_btn"
+            android:textColor="@color/white"
+            app:backgroundTint="#FF0000" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:text="ID:"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleBar" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etID"
+        android:hint="Enter subject ID"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/subject"
+        app:layout_constraintTop_toBottomOf="@id/titleBar"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/subject"
+        android:text="Name:"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:paddingLeft="5dp"
+        android:paddingTop="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etID" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSubject"
+        android:hint="Enter subject name"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/subject"
+        app:layout_constraintTop_toBottomOf="@id/etID"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/classroom"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="7dp"
+        android:text="Room:"
+        android:textSize="8pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSubject" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etClassroom"
+        android:hint="Enter classroom"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/classroom"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSubject" />
+
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/startTime"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Start time:"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etClassroom" />
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etStartTime"
+        android:hint="Enter subject start time"
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/startTime"
+        app:layout_constraintStart_toStartOf="@id/etClassroom"
+        app:layout_constraintTop_toBottomOf="@id/etClassroom" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/setStartTime"
+        android:text="Set"
+        android:gravity="center"
+        android:background="@drawable/retangle_btn"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/secondary0"
+        app:layout_constraintLeft_toRightOf="@id/etStartTime"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etClassroom" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/endTime"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:text="End time:"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etStartTime" />
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEndTime"
+        android:hint="Enter subject end time"
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/endTime"
+        app:layout_constraintStart_toStartOf="@id/etStartTime"
+        app:layout_constraintTop_toBottomOf="@id/etStartTime" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/setEndTime"
+        android:text="Set"
+        android:gravity="center"
+        android:background="@drawable/retangle_btn"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/secondary0"
+        app:layout_constraintLeft_toRightOf="@id/etEndTime"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setStartTime" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:id="@+id/add_button"
+        android:textStyle="bold"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:background="@drawable/retangle_btn"
+        android:layout_marginBottom="15dp"
+        app:backgroundTint="@color/primary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayOfWeek"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Day of week:"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEndTime" />
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        app:layout_constraintLeft_toRightOf="@id/dayOfWeek"
+        app:layout_constraintBottom_toBottomOf="@id/dayOfWeek"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacher"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/secondary0"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Teacher List"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:padding="15dp"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherPreview"
+            android:textSize="7pt"
+            android:textStyle="bold"
+            android:textColor="@color/secondary1"
+            android:layout_marginRight="5dp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_chevron_right_grey"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/secondary0"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/teacher"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Student List"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:padding="15dp"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentPreview"
+            android:textSize="7pt"
+            android:textStyle="bold"
+            android:textColor="@color/secondary1"
+            android:layout_marginRight="5dp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_chevron_right_grey"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
